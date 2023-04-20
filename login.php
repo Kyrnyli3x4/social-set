@@ -4,7 +4,7 @@ session_start();
 
 $title="Вход";
 require __DIR__ . '/header.php';
-$conn = mysqli_connect("localhost", "root", "root", "magazine");
+$conn = mysqli_connect("localhost", "root", "root", "sacam");
 
 if (!$conn) {
     die("Ошибка: " . mysqli_connect_error());
@@ -46,8 +46,8 @@ if(isset($data['do_login'])) {
 
 <div class="container mt-4">
     <div class="row">
-        <div class="col"
-        <h2>Регистрация</h2>
+        <div class="col">
+        <h2>Авторизация</h2>
             <form action="login.php" method="post">
                 <input type="text" class="form-control" name="login" id="login" placeholder="Введите логин" required><br>
                 <input type="password" class="form-control" name="password" id="pass" placeholder="Введите пароль" required><br>
