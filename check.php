@@ -1,6 +1,8 @@
 <?php
 
-//TODO доделать проверку на правильность ключа
+
+$title="Проверка";
+require __DIR__ . '/header.php';
 
 
 if(isset($_POST['click']))
@@ -10,8 +12,6 @@ if(isset($_POST['click']))
         header('Location: home.php');
     }
 }
-
-
 
 ?>
 <div class="container mt-4">

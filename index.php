@@ -1,5 +1,5 @@
 <?php
 
-require 'login.php';
+require 'ticket/send.php';
 
 ?>
